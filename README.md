@@ -25,4 +25,10 @@ Jest Snippets
 
 - [Chalk](https://github.com/chalk/chalk#readme)
 - [Glob](https://github.com/isaacs/node-glob#readme)
-- [Dotenv](https://www.npmjs.com/package/dotenv)
+
+## Environment variables
+- [dotenv-safe](https://www.npmjs.com/package/dotenv-safe)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+
+## Logging
+ - winston
