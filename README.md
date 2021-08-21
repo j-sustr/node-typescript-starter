@@ -11,6 +11,11 @@ npm run start
 npm run dev
 ```
 
+# Useful VS Code extensions
+
+Jest Runner
+Jest Snippets
+
 
 # Useful links
 
