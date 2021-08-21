@@ -3,17 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "check": "tsc",
-    "test": "jest --colors",
-    "test:coverage": "npm run test -- --coverage"
-  },
   "scripts": {
+    "check": "tsc",
     "watch": "tsc -w",
     "dev": "nodemon dist/main.js",
-    "start": "node dist/main.js",
     "dev2": "nodemon --exec ts-node src/main.ts",
-    "start2": "ts-node src/main.ts"
+    "start": "node dist/main.js",
+    "start2": "ts-node src/main.ts",
+    "test": "jest --colors",
+    "test:dev": "jest --watchAll",
+    "test:coverage": "npm run test -- --coverage"
   },
   "keywords": [],
   "author": "",
