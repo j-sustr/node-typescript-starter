@@ -1,21 +1,26 @@
 {
   "compilerOptions": {
-    /* Visit https://aka.ms/tsconfig.json to read more about this file */
-
     /* Basic Options */
-    "target": "ESNext",                           
-    "module": "ESNext",                           
-    "outDir": "dist",                              
+    "target": "ES2021",
+    "module": "CommonJS",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "pretty": true,
 
     /* Strict Type-Checking Options */
     "strict": true,
 
     /* Module Resolution Options */
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
+    "types": ["node", "jest"],
+    "typeRoots": ["./node_modules/@types", "./src/@types"],
     "esModuleInterop": true,
+    "resolveJsonModule": true,
 
     /* Advanced Options */
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["src/*.ts", "src/**/*.ts", "src/**/*.js"],
+  "exclude": ["node_modules", "src/**/*.spec.ts", "src/**/*.spec.js"]
 }
